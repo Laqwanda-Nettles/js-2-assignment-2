@@ -15,19 +15,20 @@ var aliceSays,
   jackSays;
 
 // this variable is set to a string.
-let theMessage = "Kathy loves Larry";
-
-aliceSays = theMessage;
-bobSays = aliceSays;
-carolSays = bobSays;
-danSays = carolSays;
-ellieSays = danSays;
-frankSays = ellieSays;
-gregSays = frankSays;
-harrySays = gregSays;
-ivySays = harrySays;
-jackSays = ivySays;
-
+function tellEveryone() {
+  let theMessage = "Kathy loves Larry";
+  aliceSays = theMessage;
+  bobSays = aliceSays;
+  carolSays = bobSays;
+  danSays = carolSays;
+  ellieSays = danSays;
+  frankSays = ellieSays;
+  gregSays = frankSays;
+  harrySays = gregSays;
+  ivySays = harrySays;
+  jackSays = ivySays;
+  setMessages();
+}
 // call setNames from 'messages.js'
 // to set the messages in the DOM.
 setMessages();
@@ -47,3 +48,7 @@ function gossipKing() {
   setMessages();
 }
 bobBtn.onclick = gossipKing;
+
+let everyoneBtn;
+everyoneBtn = document.querySelector("#everyone-btn");
+everyoneBtn.onclick = tellEveryone;
