@@ -34,11 +34,13 @@ function tellEveryone() {
 setMessages();
 
 let aliceBtn;
-aliceBtn = document.querySelector("#alice-btn");
+
 function gossipQueen() {
-  aliceSays = "But, Larry loves another!";
+  let queen = document.querySelector("#alice-text").value;
+  aliceSays = queen;
   setMessages();
 }
+aliceBtn = document.querySelector("#alice-btn");
 aliceBtn.onclick = gossipQueen;
 
 let bobBtn;
