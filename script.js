@@ -54,3 +54,12 @@ bobBtn.onclick = gossipKing;
 let everyoneBtn;
 everyoneBtn = document.querySelector("#everyone-btn");
 everyoneBtn.onclick = tellEveryone;
+
+let jackBtn;
+function LastToKnow() {
+  let last = document.querySelector("#jack-text").value;
+  jackSays = last;
+  setMessages();
+}
+jackBtn = document.querySelector("#jack-btn");
+jackBtn.onclick = LastToKnow;
