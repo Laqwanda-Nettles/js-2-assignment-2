@@ -31,3 +31,11 @@ jackSays = ivySays;
 // call setNames from 'messages.js'
 // to set the messages in the DOM.
 setMessages();
+
+let aliceBtn;
+aliceBtn = document.querySelector("#alice-btn");
+function gossipQueen() {
+  aliceSays = "But, Larry loves another!";
+  setMessages();
+}
+aliceBtn.onclick = gossipQueen;
