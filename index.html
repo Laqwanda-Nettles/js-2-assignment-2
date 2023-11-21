@@ -2,21 +2,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A game of telephone</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A game of telephone</title>
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- Your custom styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <h3>Game of Telephone</h3>
-  <p>Each "person" gets assigned information one-at-a-time. If someone changes their story, no one else will know about it until they get re-assigned a value.</p>
-  <p>To change this, go to 'script.js', and change the values for the following variables:</p>
-  <pre>
+  <body>
+    <h3>Game of Telephone</h3>
+    <p>
+      Each "person" gets assigned information one-at-a-time. If someone changes
+      their story, no one else will know about it until they get re-assigned a
+      value.
+    </p>
+    <p>
+      To change this, go to 'script.js', and change the values for the following
+      variables:
+    </p>
+    <pre>
     aliceSays
     bobSays
     carolSays
@@ -27,22 +33,29 @@
     harrySays
     ivySays
     jackSays
-  </pre>
-  <div class="telephone-container">
-    <div>Alice Says: <span id="alice-says"></span></div>
-    <div>Bob Says: <span id="bob-says"></span></div>
-    <div>Carol Says: <span id="carol-says"></span></div>
-    <div>Dan Says: <span id="dan-says"></span></div>
-    <div>Ellie Says: <span id="ellie-says"></span></div>
-    <div>Frank Says: <span id="frank-says"></span></div>
-    <div>Greg Says: <span id="greg-says"></span></div>
-    <div>Harry Says: <span id="harry-says"></span></div>
-    <div>Ivy Says: <span id="ivy-says"></span></div>
-    <div>Jack Says: <span id="jack-says"></span></div>
-  </div>
-
-  <script src="messages.js"></script>
-  <script src="script.js"></script>
-</body>
-
+  </pre
+    >
+    <div class="telephone-container">
+      <div>
+        Alice Says: <span id="alice-says"></span>
+        <button id="alice-btn">Gossip Queen</button>
+      </div>
+      <div>
+        Bob Says: <span id="bob-says"></span>
+        <button id="bob-btn">What Happened?</button>
+      </div>
+      <div>Carol Says: <span id="carol-says"></span></div>
+      <div>Dan Says: <span id="dan-says"></span></div>
+      <div>Ellie Says: <span id="ellie-says"></span></div>
+      <div>Frank Says: <span id="frank-says"></span></div>
+      <div>Greg Says: <span id="greg-says"></span></div>
+      <div>Harry Says: <span id="harry-says"></span></div>
+      <div>Ivy Says: <span id="ivy-says"></span></div>
+      <div>Jack Says: <span id="jack-says"></span></div>
+    </div>
+    <br />
+    <button id="everyone-btn">Everybody Knows!</button>
+    <script src="messages.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
