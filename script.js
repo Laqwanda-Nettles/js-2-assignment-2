@@ -39,3 +39,11 @@ function gossipQueen() {
   setMessages();
 }
 aliceBtn.onclick = gossipQueen;
+
+let bobBtn;
+bobBtn = document.querySelector("#bob-btn");
+function gossipKing() {
+  bobSays = "Yes, Kathy's neighbor Susan!";
+  setMessages();
+}
+bobBtn.onclick = gossipKing;
