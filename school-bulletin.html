@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The School Bulletin</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The School Bulletin</title>
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- Your custom styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <h3>School Bulletin</h3>
+    <p>
+      Each "person" gets a reference or "link" to the School Bulletin. It
+      doesn't matter how they get it, but to model how it might pass from person
+      to person, pass the reference to the bulletin just as you did in the
+      telephone game.
+    </p>
 
-<body>
-  <h3>School Bulletin</h3>
-  <p>
-    Each "person" gets a reference or "link" to the School Bulletin. It doesn't matter how they get it, but to model how it might pass from person to person, pass the reference to the bulletin just as you did in the telephone game.
-  </p>
+    <p>
+      This time, when the bulletin is changed, all the people will have
+      up-to-date information. This is because an object is a reference type, and
+      all the people have a reference to the same object. (In contrast to a
+      value type.)
+    </p>
 
-  <p>
-    This time, when the bulletin is changed, all the people will have up-to-date information. This is because an object is a reference type, and all the people have a reference to the same object. (In contrast to a value type.)
-  </p>
-
-  <p>To work on this, go to 'bulletin.js', and change the values for the following variables:</p>
-  <pre>
+    <p>
+      To work on this, go to 'bulletin.js', and change the values for the
+      following variables:
+    </p>
+    <pre>
     alicesBulletin
     bobsBulletin
     carolsBulletin
@@ -32,22 +40,23 @@
     harrysBulletin
     ivysBulletin
     jacksBulletin
-  </pre>
-  <div class="telephone-container">
-    <div>Alice Says: <span id="alice-says"></span></div>
-    <div>Bob Says: <span id="bob-says"></span></div>
-    <div>Carol Says: <span id="carol-says"></span></div>
-    <div>Dan Says: <span id="dan-says"></span></div>
-    <div>Ellie Says: <span id="ellie-says"></span></div>
-    <div>Frank Says: <span id="frank-says"></span></div>
-    <div>Greg Says: <span id="greg-says"></span></div>
-    <div>Harry Says: <span id="harry-says"></span></div>
-    <div>Ivy Says: <span id="ivy-says"></span></div>
-    <div>Jack Says: <span id="jack-says"></span></div>
-  </div>
-
-  <script src="bulletin.js"></script>
-  <script src="script-2.js"></script>
-</body>
-
+  </pre
+    >
+    <div class="telephone-container">
+      <div>Alice Says: <span id="alice-says"></span></div>
+      <div>Bob Says: <span id="bob-says"></span></div>
+      <div>Carol Says: <span id="carol-says"></span></div>
+      <div>Dan Says: <span id="dan-says"></span></div>
+      <div>Ellie Says: <span id="ellie-says"></span></div>
+      <div>Frank Says: <span id="frank-says"></span></div>
+      <div>Greg Says: <span id="greg-says"></span></div>
+      <div>Harry Says: <span id="harry-says"></span></div>
+      <div>Ivy Says: <span id="ivy-says"></span></div>
+      <div>Jack Says: <span id="jack-says"></span></div>
+    </div>
+    <input type="text" id="news-input" />
+    <button id="news">Update Bulletin</button>
+    <script src="bulletin.js"></script>
+    <script src="script-2.js"></script>
+  </body>
 </html>
