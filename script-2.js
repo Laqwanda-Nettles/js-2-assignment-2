@@ -18,6 +18,7 @@ var alicesBulletin,
 let schoolBulletin;
 
 // this variable is set to an object
+
 schoolBulletin = {
   message: "Cougars Win!",
 };
@@ -28,11 +29,24 @@ carolsBulletin = bobsBulletin;
 dansBulletin = carolsBulletin;
 elliesBulletin = dansBulletin;
 franksBulletin = elliesBulletin;
+//franksBulletin = { message: "The Cougars Cheated!"}
+//Setting a variable to object will change it's message and those that follow it but, not the ones before it.
 gregsBulletin = franksBulletin;
 harrysBulletin = gregsBulletin;
 ivysBulletin = harrysBulletin;
 jacksBulletin = ivysBulletin;
 
+//ivysBulletin.message = "I don't like sports!"
+//gregsBulletin.message = "Let's geaux Saints!"
+// The message will equal the last message received.
+
+function bulletinNews() {
+  schoolBulletin.message = document.querySelector("#news-input").value;
+  setBulletins();
+}
+
+btn = document.querySelector("#news");
+btn.onclick = bulletinNews;
 // call setNames from 'messages.js'
 // to set the messages in the DOM.
 setBulletins();
