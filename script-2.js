@@ -20,7 +20,8 @@ let schoolBulletin;
 // this variable is set to an object
 
 schoolBulletin = {
-  message: "Cougars Win!",
+  message: "Cougars Win!", //"Game tonight: Mighty Ducks vs Hawks!"
+  //When changing the message in the object literal it becomes the default message for everyone.
 };
 
 alicesBulletin = schoolBulletin;
@@ -30,7 +31,7 @@ dansBulletin = carolsBulletin;
 elliesBulletin = dansBulletin;
 franksBulletin = elliesBulletin;
 //franksBulletin = { message: "The Cougars Cheated!"}
-//Setting a variable to object will change it's message and those that follow it but, not the ones before it.
+//Setting a variable to an object will change it's message and those that follow it but, not the ones before it.
 gregsBulletin = franksBulletin;
 harrysBulletin = gregsBulletin;
 ivysBulletin = harrysBulletin;
